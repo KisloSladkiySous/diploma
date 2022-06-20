@@ -15,11 +15,17 @@ export class ApiService {
     getNewsByCategory(category:string):any { 
       let params = new HttpParams;
       params= params.append("country","ru");
-      params = params.append("category",category);
       params = params.append("language","ru");
-  
-      return this.http.get(this.url, {
-        params:params
-      })
+      if (category) {
+        params = params.append("category",category);
+        return this.http.get(this.url, {
+          params:params
+        })
+      } else { 
+        return this.http.get(this.url, {
+          params:params
+        })
+      }
+   
     }
 }

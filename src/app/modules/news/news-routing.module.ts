@@ -11,6 +11,13 @@ export const newsRoutes: Routes = [
         component: RootComponent,
         children: [
           {
+          
+              path: 'main',
+              component: NewsFeedComponent,
+              data: { mode: null}
+
+          },
+          {
             path: 'sports',
             component: NewsFeedComponent,
             data: { mode: 'sports' }
