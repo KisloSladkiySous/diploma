@@ -1,0 +1,11 @@
+
+
+<div class="feed" *ngFor="let news of data; let i = index">
+    <app-news-card
+    title = '{{news.title}}'
+    description = '{{news.description}}'
+    pathToImg = '{{news.image_url}}'
+    source = "{{news.source_id}}"
+    date = {{news.pubDate}}
+  ></app-news-card>
+</div>
