@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ApiService {
   private url = environment.baseApiUrl
-
+  isAuth = false
   constructor(
     public http:HttpClient
   ) { }

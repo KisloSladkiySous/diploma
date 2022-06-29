@@ -1,0 +1,264 @@
+.wrapper { 
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #648FFF;
+}
+.login-form  { 
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: flex-start;
+        gap: 40px;
+        margin: 250px 0 0 650px;
+    width: 580px;
+    height: 475px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        align-items: center
+}
+.login-form-wrapper { 
+    height: 100%;
+    display: flex;
+}
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.body{
+    overflow:hidden;
+}
+
+.progress-bar{
+    margin-top: 52px;
+}
+.title{
+    margin-top: 80px;   
+}
+.registration-form-container{
+    width: 456px;
+    margin-top:32px;
+    border: 1px solid #E2E4E5;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px;
+    
+}
+ label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+ 
+h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    position: static;
+    height: 36px;
+    width: 456px;
+    margin-bottom: 16px;
+}
+h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #242731;
+}
+.contacts-title {
+    h2{
+    margin-bottom: 2px;
+    }
+    p{
+        margin-bottom: 32px;
+    }
+}
+.email-field{
+    margin-bottom: 32px;
+}
+.phone-number-field{
+    margin-bottom: 48px;
+}
+.date-and-time-picker{
+    position: static;
+    height: 44px;
+    left: 4.08%;
+    right: 4.08%;
+    position: static;
+    text-align: left ;
+    width: 392px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #E2E4E5;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding:16px 8px 16px 8px;
+}
+
+.address-tilte,.date-tilte {
+    
+    h2{
+    margin-bottom: 2px;
+    }
+    p{
+        margin-bottom: 32px;
+    }
+ 
+}
+
+
+ 
+.address-form{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.address-field{
+    display:flex;
+    align-items:flex-end;
+    
+}
+.title p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #575F6E;
+}
+.registration-form-container{
+    p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        color: #575F6E;
+    }
+}
+.form-button button{
+    
+    float:left;
+    padding: 12px 56px 12px 32px;
+    width:187px; 
+    border: 1px solid #BBBFC1;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 32px;
+}
+.contact-form input{
+    position: static;
+    height: 44px;
+    left: 4.08%;
+    right: 4.08%;
+    position: static;
+    width: 392px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid #E2E4E5;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding:16px 8px 16px 8px;
+}
+.form-button button:disabled{
+    color:#333;
+}
+.form-button button:hover{
+    color: #fff;
+    background: #333;
+    transition: all .3s linear;
+ 
+}
+.email-field {
+    height:60px;
+}
+.phone-number-field {
+    height:60px;
+}
+small{
+    color:red;
+    margin-top:2px;
+    font-family: 'Roboto';
+}
+.email-field input.ng-valid{
+    border-color:rgb(30, 221, 30);
+}
+.email-field input.ng-touched.ng-invalid{
+    border-color:red;
+    background-color:rgba(238, 104, 104, 0.692);
+}
+.email-field input:focus{
+    border: 1px solid #007AFF;
+    
+}
+.phone-number-field input:focus{
+    border: 1px solid #007AFF;
+    
+}
+.phone-number-field input.ng-valid{
+    border-color:rgb(30, 221, 30);
+
+}
+.phone-number-field input.ng-touched.ng-invalid{
+    border-color:red;
+    background-color:rgba(238, 104, 104, 0.692);
+
+}
+input{
+    position: static;
+    height: 44px;
+    left: 4.08%;
+    right: 4.08%;
+    position: static;
+    width: 392px;
+
+    border: 1px solid #E2E4E5;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    padding:16px 8px 16px 8px;
+}
+.forgot-password {
+    margin-left: -40px;
+    color:#648FFF;
+}
+.btn { 
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 40px;
+gap: 17px;
+
+width: 116px;
+height: 43px;
+
+background: #648FFF;
+border: 1px solid rgba(100, 143, 255, 0.6);
+border-radius: 10px;
+}
+.btn:hover{ 
+cursor: pointer;
+background: #f6fcff;
+
+
+}

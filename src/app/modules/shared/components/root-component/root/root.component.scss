@@ -6,7 +6,7 @@
     padding: 0.7rem 2rem;
     z-index: 1;
     height: 60px;
-    width: 100%;
+    // width: 100%;
     opacity: 0.9;
     background: #FFFFFF;
     color: #fff;
@@ -59,3 +59,24 @@ li {
     padding-top: 60px;
     background: #F5F5F5;
   }
+  .login { 
+    text-decoration: none;
+    padding-right: 10px;
+  }
+  input{
+    position: static;
+ 
+    width: 500px;
+    margin-top: 15px;
+    border: 1px solid #E2E4E5;
+    border-radius: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.title-text { 
+  font-weight: bold;
+  margin-left: 15px;
+}

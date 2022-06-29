@@ -3,15 +3,16 @@
     <div class="info">
       <p class="source">Источник: {{source}}</p> 
       <p class="date">Дата публикации: {{date}}</p>
+     <a (click)="a()" href=""> <img src="../../../../../../assets/img/Frame_5.svg" alt="" class="icon"></a> 
     </div>
     <div class="title">
       <h4><b>{{title}}</b></h4>
     </div>
     <div class="container">
-      <img [src]="sanitizeImageUrl(pathToImg ? pathToImg : imageAlt)" width="400" height="400"  style="width:100%">
+      <img class="img" [src]="sanitizeImageUrl(pathToImg ? pathToImg : imageAlt)" width="400" height="400"  style="width:100%">
       <div class="content">
         <p class="description">{{description}}</p>
-        <button class="btn"  mat-button color="primary">Читать далее</button>
+        <button class="btn"  mat-button color="primary" [routerLink]="['../specialNews', id]" [queryParams]="{title: title, source:source, date:date,desc:description, src:pathToImg,content:content}">Читать далее</button>
       </div>
     </div>
   </div>

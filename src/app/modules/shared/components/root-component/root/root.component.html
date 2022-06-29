@@ -1,13 +1,19 @@
 
 <div class="wrapper">
     <div class="header">
-        <div class="title"> Title</div>
-        <!-- <mat-form-field appearance="fill">
-            <mat-label>Поиск</mat-label>
-            <input matInput >
-              <mat-icon>search</mat-icon>
-          </mat-form-field> -->
-        <div class="user-profile"> Виктор Скоморохов</div>
+        <div class="title"> <p  class="title-text"> NewsAggregator</p> </div>
+        <div class="search-panel">
+            <input
+            class="phone-input"
+            placeholder="Поиск"
+          />
+        </div>
+        <div class="user-profile" *ngIf="api.isAuth === false ;else profile"> <a class="login" routerLink="../login">Войти</a></div>
+        <ng-template #profile>
+            <div class="user-profile">
+                <a class="login" routerLink="../login">test@mail.ru </a>
+        </div>
+        </ng-template>
     </div>
     <nav class="navbar">
         <ul>

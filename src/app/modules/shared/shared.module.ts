@@ -7,6 +7,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import { ApiService } from '../core/services/api.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -18,7 +20,10 @@ import {MatIconModule} from '@angular/material/icon';
     CommonModule,
     AppRoutingModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule
+
   ],
   exports: [
     LoginComponent,
@@ -26,7 +31,12 @@ import {MatIconModule} from '@angular/material/icon';
     AppRoutingModule,
     MatButtonModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule,
+    FormsModule
+  ],
+  providers: [
+    ApiService
   ]
 })
 export class SharedModule { }

@@ -1,1 +1,74 @@
-<p>login works!</p>
+<div class="wrapper">
+        <div class="login-form">
+            <div class="login-title">
+            </div>
+            <form class="myForm" [formGroup]="contactsForm"  >
+            <div class="email-field"  [ngClass]="{invalid:contactsForm.get('email')?.touched && contactsForm.get('email')?.invalid}">
+                <label for="email">Введите почту</label><br />
+              <input
+                id="email"
+                class="email-input"
+                placeholder="example@mail.ru"
+                formControlName="email"
+              />
+              <div class="validation" 
+              *ngIf="contactsForm.get('email')?.touched && contactsForm.get('email')?.invalid">
+               <small *ngIf="contactsForm.get('email')?.errors!['required']">Это обязательное поле</small>
+               <small *ngIf="contactsForm.get('email')?.errors?.['email']">Некорректный email</small>
+              </div>
+            </div>
+            <div class="phone-number-field" [ngClass]="{invalid:contactsForm.get('password')?.touched && contactsForm.get('password')?.invalid}">
+                <label for="phone">Введите пароль</label><br />
+                  <input
+                    id="phone"
+                    class="phone-input"
+                    formControlName="password"
+                    placeholder="******"
+                    type="password"
+                  />
+                  <div class="validation" 
+                  *ngIf="contactsForm.get('password')?.touched && contactsForm.get('password')?.invalid">
+                   <small *ngIf="contactsForm.get('password')?.errors!['required']">Это обязательное поле</small>
+                  </div>
+                </div>
+                </form>
+                <div class="forgot-password">
+                    <a href="" class="forgot-password"> Нет аккаунта? Зарегистрируйтесь</a>
+                </div>
+                <div >
+                    <button  class="btn"(click)="abv()"> Вход</button>
+                </div>
+        </div>
+  
+</div>
+<!-- <div class="wrapper">
+        <div class="login-form">
+            <div class="email-field"  [ngClass]="{invalid:contactsForm.get('email')?.touched && contactsForm.get('email')?.invalid}">
+                <label for="email">Email</label><br />
+              <input
+                id="email"
+                class="email-input"
+                placeholder="example@mail.ru"
+                formControlName="email"
+              />
+              <div class="validation" 
+              *ngIf="contactsForm.get('email')?.touched && contactsForm.get('email')?.invalid">
+               <small *ngIf="contactsForm.get('email')?.errors!['required']">Это обязательное поле</small>
+               <small *ngIf="contactsForm.get('email')?.errors?.['email']">Некорректный email</small>
+              </div>
+            </div>
+            <div class="phone-number-field" [ngClass]="{invalid:contactsForm.get('password')?.touched && contactsForm.get('password')?.invalid}">
+            <label for="phone">Пароль</label><br />
+              <input
+                id="phone"
+                class="phone-input"
+                formControlName="password"
+              />
+              <div class="validation" 
+              *ngIf="contactsForm.get('password')?.touched && contactsForm.get('password')?.invalid">
+               <small *ngIf="contactsForm.get('password')?.errors!['required']">Это обязательное поле</small>
+              </div>
+            </div>
+        </div>
+  
+</div> -->

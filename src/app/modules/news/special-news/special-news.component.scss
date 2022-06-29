@@ -3,22 +3,18 @@
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     max-width: 700px;
-    max-height: 530px;
+    max-height: 900px;
     margin:0 auto;
     background: #FFFFFF;
   }
   
   /* Add rounded corners to the top left and the top right corner of the image */
-  .img {
+  img {
     max-width: 450px;
     max-height: 350px;
     margin-left: 30px;
     margin-bottom: 74px;
     border-radius: 5px 5px 0 0;
-  }
-  .icon { 
-    margin-top: 10px;
-    margin-left: 220px;
   }
   .info { 
     margin-left: 10px;
@@ -55,3 +51,17 @@
     position: absolute;
   bottom: 0px;
   }
+:host {
+    height:100%;
+}
+.wrapper { 
+  height: 725px;
+}
+.news-content{ 
+    display: flex;
+    padding: 10px;
+}
+.icon { 
+  margin-top: 10px;
+  margin-left: 220px;
+}

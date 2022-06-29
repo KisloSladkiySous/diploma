@@ -10,7 +10,8 @@ export interface nestedNews {
   description?:any,
   image_url?:any,
   source_id?:any,
-  pubDate?:any
+  pubDate?:any,
+  content?:any
 }
 @Component({
   selector: 'app-news-feed',
@@ -33,6 +34,7 @@ export class NewsFeedComponent implements OnInit {
     //   pubDate: '2022-02-04 07:07:01',
      
     //   source_id: 'pcguru',
+    //   content: "Aloy kalandjának folytatásában úgy tűnik nem sok alkalmunk lesz tétlenül, malmozva ücsörögniAloy kalandjának folytatásában úgy tűnik nem sok alkalmunk lesz tétlenül, malmozva ücsörögniAloy kalandjának folytatásában úgy tűnik nem sok alkalmunk lesz tétlenül, malmozva ücsörögniAloy kalandjának folytatásában úgy tűnik nem sok alkalmunk lesz tétlenül, malmozva ücsörögni"
     // },
     // {
     //   title:

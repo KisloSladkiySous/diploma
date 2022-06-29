@@ -12,6 +12,8 @@ export class NewsCardComponent implements OnInit {
   @Input() pathToImg!:string
   @Input() source!:string
   @Input() date!:any
+  @Input() id!:any
+  @Input() content!:any
   imageAlt = "https://cdn.discordapp.com/attachments/705102880306233414/987084738328154152/img.png"
   constructor(private sanitizer: DomSanitizer) { }
 
@@ -20,6 +22,9 @@ export class NewsCardComponent implements OnInit {
   }
   sanitizeImageUrl(imageUrl: string): SafeUrl {
     return this.sanitizer.bypassSecurityTrustUrl(imageUrl);
+}
+a() { 
+  
 }
 
 }
